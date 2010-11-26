@@ -1,0 +1,223 @@
+* {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+body, 
+html {
+	margin:0;
+	padding:0;
+	color:#000;
+	background:#fff;
+	font-family: "Gill Sans", "Gill Sans MT", Frutiger, "Frutiger Linotype", Univers, Calibri, Helvetica, Arial, sans-serif;
+}
+.clear {
+	clear: both;
+}
+.right {
+	float: right;
+}
+.left {
+	float: left;
+}
+#wrap {
+	width:950px;
+	margin:0 auto;
+	background:#fff;
+}
+#header {
+	float:left;
+	padding:5px 10px;
+	background:#fff;
+	padding: 10px;
+}
+#error {
+	color:#ED2124;
+	clear:both;
+}
+#sub_header {
+	padding:10px 10px 10px 10px;
+	background:#E6E1DA;
+	clear:both;
+}
+#nav {
+	float:right;
+	padding:60px 10px 10px 10px;
+	background:#fff;
+	text-align: right;
+}
+#nav ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+#nav li {
+	display:inline;
+	margin:0;
+	padding: 0 5px 0 5px;
+}
+#nav li a {
+	text-decoration: none;
+	color: #0066B4;
+}
+#main {
+	float:left;
+	width:680px;
+	padding:10px;
+	background:#fff;
+}
+
+#sidebar {
+	float:right;
+	width:230px;
+	padding:10px;
+	background:#fff;
+}
+#footer {
+	clear:both;
+	padding:5px 10px;
+	background:#fff;
+}
+#footer p {
+	margin:0;
+}
+/*IE6 fix*/
+* html #footer {
+	height:1px;
+}
+/*text and headers*/
+h1 {
+	color: #0066B4;
+	font-size: 100%;
+	margin: 0.1em 0;
+}
+h2 {
+	color: #0066B4;
+	font-size: 140%;
+	font-weight: normal;
+	margin: 0;
+	padding-top: 0;
+}
+h3 {
+	color: #0066B4;
+	font-size: 165%;
+	padding-top: 1.5em;
+}
+h4 {
+	color: #0066B4;
+	font-weight: normal;
+	padding-top: 0.5em;
+}
+.info {
+	font-size: .8em;
+}
+.form-error {
+	background:#ffcccc;
+}
+.error-message {
+	color:#ED2124;
+}
+
+/* Tables */
+table {
+	background: #fff;
+	border:1px solid #225B87;
+	clear: both;
+	color: #333;
+	margin-bottom: 10px;
+	width: 100%;
+}
+th {
+	background: #0066B4;
+	color: #fff;
+	/*border:1px solid #bbb;
+	border-top: 1px solid #E6E1DA;
+	border-left: 1px solid #E6E1DA;*/
+	text-align: center;
+}
+th a {
+	background:#0066B4;
+	color: #fff;
+	display: block;
+	padding: 2px 4px;
+	text-decoration: none;
+}
+th a:hover {
+	text-decoration: underline;
+}
+table tr td {
+	background: #fff;
+	/*border-right: 1px solid #ccc;*/
+	padding: 4px;
+	text-align: center;
+	vertical-align: top;
+}
+table tr.altrow td {
+	background: #E6E1DA;
+	/*border-right: 1px solid #ccc;*/
+}
+td.actions {
+	text-align: center;
+	white-space: nowrap;
+}
+td.actions a {
+	margin: 0px 6px;
+}
+td a {
+	text-decoration: none;
+	color: #1A1D1F;
+}
+td a:hover {
+	text-decoration: underline;
+	color: #1A1D1F;
+}
+
+/* Paging */
+div.paging {
+	background:#fff;
+	color: #225B87;
+	margin-bottom: 2em;
+}
+div.paging div.disabled {
+	color: #E6E1DA;
+	display: inline;
+}
+div.paging span {
+}
+div.paging span.current {
+	color: #000;
+}
+div.paging span a {
+}
+
+/* Forms */
+.form {
+}
+.form fieldset {
+	border:1px solid #E6E1DA;
+	padding: 3px;	
+}
+.form fieldset legend {
+	padding: 2px;
+	font-size: .8em;
+}
+.formfield {
+}
+.formfield label {
+	display:block;
+	padding:1px;
+	color:#000;
+}
+.formfield input, .formfield select {
+	width:14em;
+	border:1px solid #3693DA;
+	padding: 2px;
+	font-size:1em;
+}
+.formfield input:hover, input:focus {
+}
+.required input {
+	border: 1px solid #3693DA;
+}
+.smallform {
+	width:400px;
+}

@@ -1,0 +1,18 @@
+<h1>Listing bouts</h1>
+
+<table>
+  <tr>
+  </tr>
+
+<% @bouts.each do |bout| %>
+  <tr>
+    <td><%= link_to 'Show', bout %></td>
+    <td><%= link_to 'Edit', edit_bout_path(bout) %></td>
+    <td><%= link_to 'Destroy', bout, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New bout', new_bout_path %>

@@ -1,0 +1,290 @@
+@logo_blue: #0066B4;
+@off_black: #1A1D1F;
+@tertiary_blue: #225B87;
+@light_blue: #3693DA;
+@light_grey: #E6E1DA;
+@background: #fff;
+@text: #000;
+@lighttext: #fff;
+@charcoal_blue: #004275;
+@logo_red: #ED2224;
+@wrestler_red: #ffcccc;
+@wrestler_green: #ccffcc;
+
+* {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+body, 
+html {
+	margin:0;
+	padding:0;
+	color:@text;
+	background:@background;
+	font-family: "Gill Sans", "Gill Sans MT", Frutiger, "Frutiger Linotype", Univers, Calibri, Helvetica, Arial, sans-serif;
+}
+.clear {
+	clear: both;
+}
+.right {
+	float: right;
+}
+.left {
+	float: left;
+}
+#wrap {
+	width:950px;
+	margin:0 auto;
+	background:@background;
+}
+#header {
+	float:left;
+   	padding:5px 10px;
+	background:@background;
+	padding: 10px;
+}
+#error {
+	color:@logo_red;
+	clear:both;
+}
+.sub_header {
+	padding:10px 10px 10px 10px;
+	background:@light_grey;
+	clear:both;
+}
+#nav {
+	float:right;
+	padding:60px 10px 10px 10px;
+	background:@background;
+	text-align: right;
+}
+#nav ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+#nav li {
+	display:inline;
+	margin:0;
+	padding: 0 5px 0 5px;
+}
+#nav li a {
+	text-decoration: none;
+	color: @logo_blue;
+}
+#main {
+	float:left;
+	width:680px;
+	padding:10px;
+	background:@background;
+}
+
+#sidebar {
+	float:right;
+	width:230px;
+	padding:10px;
+	background:@background;
+}
+#footer {
+	clear:both;
+	padding:5px 10px;
+	background:@background;
+}
+#footer p {
+	margin:0;
+   }
+/*IE6 fix*/
+* html #footer {
+	height:1px;
+}
+/*text and headers*/
+h1 {
+	color: @logo_blue;
+	font-size: 100%;
+	margin: 0.1em 0;
+}
+h2 {
+	color: @logo_blue;
+	font-size: 140%;
+	font-weight: normal;
+	margin: 0;
+	padding-top: 0;
+}
+h3 {
+	color: @logo_blue;
+	font-size: 165%;
+	padding-top: 1.5em;
+}
+h4 {
+	color: @logo_blue;
+	font-weight: normal;
+	padding-top: 0.5em;
+}
+.info {
+	font-size: .8em;
+}
+.form-error {
+	background:#ffcccc;
+}
+.error-message {
+	color:@logo_red;
+}
+
+/* Tables */
+/* TODO set cellspacing and cellpadding to 0 */
+table {
+	background: @background;
+	border:1px solid @tertiary_blue;
+	clear: both;
+	color: #333;
+	margin-bottom: 10px;
+	width: 100%;
+}
+th {
+	background: @logo_blue;
+	color: @lighttext;
+	/*border:1px solid #bbb;
+	border-top: 1px solid @light_grey;
+	border-left: 1px solid @light_grey;*/
+	text-align: center;
+}
+th a {
+	background:@logo_blue;
+	color: @lighttext;
+	display: block;
+	padding: 2px 4px;
+	text-decoration: none;
+}
+th a:hover {
+	text-decoration: underline;
+}
+table tr td {
+	background: @background;
+	/*border-right: 1px solid #ccc;*/
+	padding: 4px;
+	text-align: center;
+	vertical-align: top;
+}
+table tr.altrow td {
+	background: @light_grey;
+	/*border-right: 1px solid #ccc;*/
+}
+td.actions {
+	text-align: center;
+	white-space: nowrap;
+}
+td.actions a {
+	margin: 0px 6px;
+}
+td a {
+	text-decoration: none;
+	color: @off_black;
+}
+td a:hover {
+	text-decoration: underline;
+	color: @off_black;
+}
+
+/* Paging */
+div.paging {
+	background:@background;
+	color: @tertiary_blue;
+	margin-bottom: 2em;
+}
+div.paging div.disabled {
+	color: @light_grey;
+	display: inline;
+}
+div.paging span {
+}
+div.paging span.current {
+	color: @text;
+}
+div.paging span a {
+}
+
+/* Forms */
+.form {
+}
+.form fieldset {
+	border:1px solid @light_grey;
+	padding: 3px;	
+}
+.form fieldset legend {
+	padding: 2px;
+	font-size: .8em;
+}
+.formfield {
+}
+.formfield label {
+	display:block;
+	padding:1px;
+	color:@text;
+}
+.formfield input, select {
+	width:14em;
+	padding: 2px;
+	font-size: 1em;
+}
+.formfield input:hover, input:focus {
+}
+.required input {
+}
+.smallform {
+	width:400px;
+}
+
+/*
+#listing {
+  
+}
+*/
+
+/*buttons
+Original code from SFDC buttons
+
+.btn a, .btn button, .btn {
+  border-right-width-value: medium;
+  border-right-style-value: solid;
+  border-right-color-value: @light_grey;
+  
+  border-right-width-ltr-source: physical;
+  border-right-width-rtl-source: physical;
+  border-right-style-ltr-source: physical;
+  border-right-style-rtl-source: physical;
+  border-right-color-ltr-source: physical;
+  border-right-color-rtl-source: physical;
+
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #5c5d61;
+  border-top-width: medium;
+  border-top-style: none;
+  border-top-color: -moz-use-text-color;
+
+  border-left-width-value: medium;
+  border-left-style-value: none;
+  border-left-color-value: -moz-use-text-color;
+  border-left-width-ltr-source: physical;
+  border-left-width-rtl-source: physical;
+  border-left-style-ltr-source: physical;
+  border-left-style-rtl-source: physical;
+  border-left-color-ltr-source: physical;
+  border-left-color-rtl-source: physical;
+
+  font-size: 80%;
+  color: @text;
+  padding-top: 1px;
+  padding-right: 3px;
+  padding-bottom: 1px;
+  padding-left: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  display: inline;
+  
+  margin-top: 2px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  margin-left: 2px;
+}
+*/

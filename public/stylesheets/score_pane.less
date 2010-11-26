@@ -1,0 +1,151 @@
+@logo_blue: #0066B4;
+@off_black: #1A1D1F;
+@tertiary_blue: #225B87;
+@light_blue: #3693DA;
+@light_grey: #E6E1DA;
+@background: #fff;
+@text: #000;
+@lighttext: #fff;
+@charcoal_blue: #004275;
+@logo_red: #ED2224;
+@wrestler_red: #ffcccc;
+@wrestler_green: #ccffcc;
+
+.rounded_corners {
+  -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
+}
+.red {
+  background-color: @wrestler_red;
+  border: 2px solid (@wrestler_red - #333);
+}
+.green {
+  background-color: @wrestler_green;
+  border: 2px solid (@wrestler_green - #333);
+}
+.red_btn {
+  .red;
+  width:45%;
+}
+.green_btn {
+  .green;
+  width:45%;
+}
+.btn_set {
+  width: 200px;
+}
+.neutral {
+  background-color: @light_grey;
+  border: 2px solid (@light_grey - #333);
+}
+
+.round_each {
+  float:left;
+  width:100%;
+  padding: 2px;
+  margin: auto;
+  .rounded_corners;
+}
+.round {
+  /*float: left;*/
+  width: 90%;
+  border: 1px solid @light_grey;
+}
+.score_blip {
+  .rounded_corners;
+  float:left;
+  padding: 1px;
+  opacity: .7; 
+  filter:Alpha(Opacity=70);
+}
+.neutral_round {
+  float:left;
+  .round_each;
+}
+
+/* data entry panes */
+.panefield{
+
+}
+.panefield label {
+	display:block;
+	padding:1px;
+	color:@text;
+}
+.panefield input, select {
+	border:1px solid @light_blue;
+	padding: 2px;
+	font-size: 1em;
+	width: 12em;
+}
+#setup_pane {
+  display: none;
+  width: 100%;
+}
+.edit_pane {
+  margin: 10px;
+  padding: 10px;
+  width: 45%;
+  height: 200px;
+}
+.display_pane {
+  float: left;
+  margin: 10px;
+  padding: 10px;
+  width: 45%;
+}
+#friendly_pane {
+  float: left;
+  background: @wrestler_green;
+  border: 2px solid (@wrestler_green - #333);
+}
+#opponent_pane {
+  float: right;
+  background: @wrestler_red;
+  border: 2px solid (@wrestler_red - #333);
+}
+#start_bout_pane {
+  margin: auto;
+  padding: 10px;
+  background: @light_grey;
+  border: 2px solid (@light_grey - #333);
+  width: 45%;
+}
+#add_wrestler_pane {
+  display:none;
+}
+
+#add_wrestler_pane_old {
+  display: none;
+  position: absolute;
+  width: 350px;
+  top: 80px;
+  left: 50%;
+  padding: 10px;
+  border: 2px solid;
+  background: @light_grey;
+  margin-left: -175px;
+}
+#score_pane {
+/*  display: none; */
+  float: left;
+  width: 100%;
+}
+#round_info {
+  float: left;
+  width: 60%;
+  border: 2px solid (@light_grey - #333);
+  background: @light_grey;
+}
+#control_pane {
+  float: left;
+  width: 39%;
+  border: 2px solid (@light_grey - #333);
+  background: @light_grey;
+}
+#detail_pane {
+  width: 100%;
+  border: 2px solid (@light_grey - #333);
+  background: @light_grey;
+  float: left;
+}
+/* end data entry panes */

@@ -1,0 +1,31 @@
+Feature: Events of tournament such wrestling
+  In order to organize and coordinate my matches
+  As a coach
+  I want to be able to select dates and schedule an event
+  
+  Scenario: I am a coach and I want to create a new event
+  Given: an event for a given day with no other events scheduled
+  When: I create an event for this tournament
+  Then: The system should create the event in the queue
+  
+  Scenario: Reschedule an event
+  Given: An event is already in the system
+  When: I change the date of the event
+  Then: It must be reschedule for that date
+  
+  Scenario: Edit an event
+  Given: There is some sort of mistake in the event that must be corrected
+  When: I open the event and correct the error
+  Then: The system will save the correct information
+  
+  Scenario: I want to invite others to the event
+  Given: There is an event scheduled, and I know the teams that I want to invite
+  When: I enter the name and email of another coach and send invite
+  Then: An email will be sent to the coach
+  
+  Scenario: I want to cancel an event
+  Given: There is an event scheduled that I want to cancel
+  When: I cancel the event
+  Then: The system will send emails to all invited users, and remove event from queue
+  
+  

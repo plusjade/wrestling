@@ -1,0 +1,15 @@
+- form_for @team do |f|
+  .formfield
+    = f.label :team_name
+    = f.text_field :team_name
+  .formfield
+    = f.label :country
+    = f.text_field :country
+  .formfield
+    = f.label :state
+    = f.text_field :state
+  .formfield
+    = f.label :organization
+    = f.text_field :organization
+
+  = submit_tag "Save", :class => "btn"

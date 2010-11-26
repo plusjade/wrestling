@@ -1,0 +1,8 @@
+.sub_header 
+  %h2 Wrestlers
+#main
+  #listing    
+    = render :partial => "wrestler_listing", :collection => @wrestlers
+%br
+#sidebar
+  = render :partial => "shared/wrestler_form", :object => "@wrestler", :locals => { :form_id => 'ajax_new_wrestler' }

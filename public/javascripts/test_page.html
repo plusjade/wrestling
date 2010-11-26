@@ -1,0 +1,110 @@
+<html>
+<head>
+  <script src="jquery.js"></script>
+  <link rel="stylesheet" href="../stylesheets/qunit.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="qunit.js"></script>
+  <script type="text/javascript" src="validate.js"></script>
+  <script type="text/javascript" src="wrestler.js"></script>
+  <script type="text/javascript" src="match.js"></script>
+  <script type="text/javascript" src="match_test.js"></script>
+</head>
+  <body>
+<form name="scoreForm" method="post" action="endMatchBlackberry.php">	  <table class='scoreFormSmall'>
+  <tr>
+
+    <td>
+      <table width="100%">
+        <tr>
+          <td>
+            2 1	  </td>
+            <td>
+              Unknown 	  </td>
+            </tr>
+
+            <tr>
+              <td>
+                G:<input id="greenScore" name="greenScore" readonly="readonly" size="2"></input>
+              </td>
+              <td>
+                R:<input id="redScore" name="redScore" readonly="readonly" size="2"></input>
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="2">
+                <input class="scoreButton2 green" type="button" value="Grn"/>
+                <select class="scoreDropdown" name="scoreType" id="scoreType">
+                  <option selected="selected" value="T2,red,2">Takedown</option>
+                  <option value="E1,red,1">Escape</option>
+                  <option value="R2,red,2">Reverse</option>
+                  <option value="N2,red,2">Nearfall 2</option>
+                  <option value="N3,red,3">Nearfall 3</option>
+                  <option value="W,red,0">Stall Warning</option>
+                  <option value="S1,red,1">Stall 1</option>
+                  <option value="S2,red,2">Stall 2</option>
+                  <option value="C,red,0">Caution</option>
+                  <option value="P1,red,1">Penalty 1</option>
+                  <option value="P2,red,2">Penalty 2</option>
+                  <option value="DOWN,red,0">Choose Bottom</option>
+                  <option value="TOP,red,0">Choose Top</option>
+                  <option value="NEUT,red,0">Choose Neutral</option>
+                  </select>	  
+                  <input class="scoreButton2 red" type="button" value="Red"/>
+
+                <input class="scoreButton2" type="button" value="<--"/>
+                <input class="" type="button" value="End Round"/>
+                <input size="1" name="roundBox" id="roundBox" value="1"/>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td valign="top" colspan="2">
+
+          G: <input readonly="readonly" class="green" width="100%" name="greenBox" id="greenBox" size="50"></input>
+        </td>
+      </tr><tr>
+        <td valign="top" colspan="2">
+          R: <input readonly="readonly" class="red" width="100%" name="redBox" id="redBox" size="50"></input>
+        </td>
+      </tr>
+      <tr>
+
+        <td><input type="button" value="Riding Time Green"/>
+          <input type="button" value="Riding Time Red"/></td></tr>
+          <tr><td>
+            <input type="button" value="End Match"/>
+          </td></tr>
+        </table>
+        <input type="hidden" name="savedArray" value=""/>
+        <input type='hidden' name='weight' value=''/>	  
+        <input type='hidden' name='WeightClass' value='3'/>
+        <input type='hidden' name='ClassYear' value='4'/>
+        <input type='hidden' name='opponentTeamID' value='9999'/>
+        
+        <input type='hidden' id='id_home' value='1'/>
+        <input type='hidden' id='id_visitor' value='2'/>
+        <input type='hidden' id='first_visitor' value='Visitor'/>
+        <input type='hidden' id='last_visitor' value='Test'/>
+        <input type='hidden' id='first_home' value='Home'/>
+        <input type='hidden' id='last_home' value='Test'/>
+        <input type='hidden' id='team_home' value='Home Team'/>
+        <input type='hidden' id='team_visitor' value='Visitor Team'/>
+        <input type='hidden' id='color_home' value='green'/>
+        <input type='hidden' id='color_visitor' value='red'/>
+        </form>
+
+        <br/><br/><div class=bottomNav>
+          <a href=main.php>Home</a>&nbsp;
+          |&nbsp;<a href=user_setup.php>My Profile</a>
+          |&nbsp;<a href=index.php?logout=true>Logout</a>
+        </div>
+    
+          <h1 id="qunit-header">Wrestler Object</h1>
+          <h2 id="qunit-banner"></h2>
+          <h2 id="qunit-userAgent"></h2>
+          <ol id="qunit-tests"></ol>
+          <div id="qunit-fixture">test markup, will be hidden</div>
+</body>
+</html>

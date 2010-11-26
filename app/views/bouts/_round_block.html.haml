@@ -1,0 +1,19 @@
+-#- 3.times do |x|
+-#  - n = x+1
+-#  .round
+-#    %h1 Round #{n}
+-#    %div{ :class => ["r#{n}", "red", "round_each"]}
+-#      .score_blip.neutral E1
+-#      .score_blip.neutral T2
+-#    %div{ :class => ["r#{n}", "green", "round_each"]}
+-#      .score_blip.neutral T2
+
+- 3.times do |x|
+  - n=x+1
+  .round 
+    %h1 Round #{n}
+    %div{ :class => ["r#{n}", "round_each", "neutral"]}
+      .score_blip.red E1
+      .score_blip.green T2
+      .score_blip.red R2
+      .score_blip.green E1

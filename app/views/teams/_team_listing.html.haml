@@ -1,0 +1,8 @@
+%tr
+  %td= h team_listing.team_name
+  %td= h team_listing.country
+  %td= h team_listing.state
+  %td= h team_listing.organization
+  %td= link_to 'Show', team_url(team_listing)
+  %td= link_to 'Edit', edit_team_path(team_listing)
+  %td= link_to 'Destroy', team_path(team_listing), :confirm => 'Are you sure?', :method => :delete

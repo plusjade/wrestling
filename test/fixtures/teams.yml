@@ -1,0 +1,20 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+# This model initially had no columns defined.  If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+one:
+  id: 1
+  team_name: Home Team
+  state: Home State
+  country: Home Country
+  
+# column: value
+#
+two:
+  id: 2
+  team_name: Visiting Team
+  state: Visiting State
+  country: Visiting Country
+#  column: value

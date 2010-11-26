@@ -1,0 +1,43 @@
+.sub_header
+  %h2 Live Bout
+  
+#setup_pane
+  #friendly_pane.edit_pane
+    %p Select your wrestler from roster:
+    -# First of two forms, this one holds quick_match wrestler
+    -form_for @friendly_wrestler do |f|
+      .panefield.left
+        = f.label :team_name 
+        = collection_select(:team, :id, @teams, :id, :team_name)
+      .panefield.right
+        %label Name
+        = collection_select(:wrestler, :id, @wrestlers, :id, :first_last)
+      
+  #opponent_pane.edit_pane
+    -# 2nd of two forms, this one holds quick_match wrestler
+    %p Select opponent from list:
+    -form_for @opponent_wrestler do |f|
+      .panefield.left
+        = f.label :team_name 
+        = collection_select(:team, :id, @teams, :id, :team_name)
+      .panefield.right
+        %label Name
+        = collection_select(:wrestler, :id, @wrestlers, :id, :first_last)
+        
+    %p.clear Or create new record:
+    .right= button_to "Add New", new_bout_path, :class => 'btn', :id => 'show_add_wrestler_pane'
+    
+  #start_bout_pane.clear
+    - form_for @bout do |f|
+      .panefield
+        = f.label :weight_class
+        = f.text_field :weight_class, :value => @friendly_wrestler.weight_class
+
+      = submit_to_remote "swap_color", "Swap Colors", :url => {:action => 'swap_colors'}, :html => {:class => 'btn'}
+      .clear
+        = button_to 'Start Match', '#', :class => "btn", :id => 'show_score_pane'
+
+= render :partial => 'score_pane'
+
+#add_wrestler_pane
+  = render :partial => 'shared/wrestler_form', :object => @wrestler, :locals => { :form_id => 'ajax_popup_new_wrestler' }

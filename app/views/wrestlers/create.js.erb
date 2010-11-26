@@ -1,0 +1,6 @@
+$("#error").html('<%= escape_javascript(flash.delete(:notice))%>');
+$("#listing").append('<%= escape_javascript(render :partial => "wrestler_listing", :object => @wrestler)%>');
+$("#ajax_new_wrestler")[0].reset();
+//page.insert_html :bottom, :listing, :partial => 'shared/wrestler_listing', :object => @wrestler
+//page.replace_html :error, flash[:notice] 
+//page[:wrestler_form].reset

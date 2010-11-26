@@ -1,0 +1,144 @@
+.rounded_corners {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+.red {
+  background-color: #ffcccc;
+  border: 2px solid #cc9999;
+}
+.green {
+  background-color: #ccffcc;
+  border: 2px solid #99cc99;
+}
+.red_btn {
+  background-color: #ffcccc;
+  border: 2px solid #cc9999;
+  width: 45%;
+}
+.green_btn {
+  background-color: #ccffcc;
+  border: 2px solid #99cc99;
+  width: 45%;
+}
+.btn_set { width: 200px; }
+.neutral {
+  background-color: #e6e1da;
+  border: 2px solid #b3aea7;
+}
+.round_each {
+  float: left;
+  width: 100%;
+  padding: 2px;
+  margin: auto;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+.round {
+  width: 90%;
+  border: 1px solid #e6e1da;
+}
+.score_blip {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  float: left;
+  padding: 1px;
+  opacity: 0.7;
+  filter: Alpha(Opacity=70);
+}
+.neutral_round {
+  float: left;
+  float: left;
+  width: 100%;
+  padding: 2px;
+  margin: auto;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+.panefield label {
+  display: block;
+  padding: 1px;
+  color: #000000;
+}
+.panefield input {
+  border: 1px solid #3693da;
+  padding: 2px;
+  font-size: 1em;
+  width: 12em;
+}
+select {
+  border: 1px solid #3693da;
+  padding: 2px;
+  font-size: 1em;
+  width: 12em;
+}
+#setup_pane {
+  display: none;
+  width: 100%;
+}
+.edit_pane {
+  margin: 10px;
+  padding: 10px;
+  width: 45%;
+  height: 200px;
+}
+.display_pane {
+  float: left;
+  margin: 10px;
+  padding: 10px;
+  width: 45%;
+}
+#friendly_pane {
+  float: left;
+  background: #ccffcc;
+  border: 2px solid #99cc99;
+}
+#opponent_pane {
+  float: right;
+  background: #ffcccc;
+  border: 2px solid #cc9999;
+}
+#start_bout_pane {
+  margin: auto;
+  padding: 10px;
+  background: #e6e1da;
+  border: 2px solid #b3aea7;
+  width: 45%;
+}
+#add_wrestler_pane { display: none; }
+#add_wrestler_pane_old {
+  display: none;
+  position: absolute;
+  width: 350px;
+  top: 80px;
+  left: 50%;
+  padding: 10px;
+  border: 2px solid;
+  background: #e6e1da;
+  margin-left: -175px;
+}
+#score_pane {
+  float: left;
+  width: 100%;
+}
+#round_info {
+  float: left;
+  width: 60%;
+  border: 2px solid #b3aea7;
+  background: #e6e1da;
+}
+#control_pane {
+  float: left;
+  width: 39%;
+  border: 2px solid #b3aea7;
+  background: #e6e1da;
+}
+#detail_pane {
+  width: 100%;
+  border: 2px solid #b3aea7;
+  background: #e6e1da;
+  float: left;
+}

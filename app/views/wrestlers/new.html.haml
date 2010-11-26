@@ -1,0 +1,7 @@
+.sub_header 
+  %h2 New Wrestler
+#main
+  = render :partial => "shared/wrestler_form", :object => @wrestler, :locals => { :remote_form => false }
+  
+  = link_to 'Back', wrestlers_path
+#sidebar

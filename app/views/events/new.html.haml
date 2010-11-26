@@ -1,0 +1,28 @@
+.sub_header
+  %h2 New Event
+#main
+  - form_for @event do |f|
+    .formfield
+      = f.label :title
+      = f.text_field :title
+    .formfield
+      = f.label :host
+      = f.text_field :host
+    .formfield
+      = f.label :state
+      = f.text_field :state
+    .formfield
+      = f.label :country
+      = f.text_field :country
+    .formfield
+      = f.label :address
+      = f.text_field :address
+    .formfield
+      = f.label :zip_code
+      = f.text_field :zip_code
+    .formfield
+      = f.label :date
+      = f.text_field :date
+
+    = submit_tag "Save", :class => "btn"
+

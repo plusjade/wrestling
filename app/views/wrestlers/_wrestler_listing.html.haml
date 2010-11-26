@@ -1,0 +1,12 @@
+%h1
+  %a= "#{wrestler_listing.first_last}"
+%div
+  %p
+    .left= link_to 'Add Match', quick_bout_path(wrestler_listing), :class => ""
+    .left= link_to 'Mobile Match', match_setup_path(wrestler_listing), :class => ""
+    .left 
+      Weight Class:
+      = "#{wrestler_listing.weight_class}"
+    .right
+      = link_to 'Delete Record', wrestler_path(wrestler_listing), :method => :delete
+  -# link_to "#{wrestler_listing.teams}", wrestler_listing

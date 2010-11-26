@@ -1,0 +1,16 @@
+- form_id ||= "wrestler_form"
+- form_for @wrestler, :html => {:id => form_id, :class => "wrestler_form"} do |f|
+  .formfield 
+    = f.label :team_name 
+    = collection_select(:wrestler, :team_ids, @teams, :id, :team_name)
+  .formfield 
+    = f.label :first_name
+    = f.text_field :first_name
+  .formfield
+    = f.label :last_name 
+    = f.text_field :last_name
+  .formfield
+    = f.label :weight_class 
+    = f.text_field :weight_class
+  
+  = f.submit 'Save', :class => 'btn'

@@ -1,0 +1,13 @@
+.sub_header
+  %h2 Listing Teams
+#main
+  %table
+    %tr
+      %th Team Name
+      %th Country
+      %th State
+      %th Org
+      %th Actions
+    = render :partial => 'team_listing', :collection => @teams
+
+#side_panel

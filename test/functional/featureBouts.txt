@@ -1,0 +1,29 @@
+Feature: Record a wrestling match
+  In order to record actual matches and gather statistics
+  As a system user
+  I want to be able to gather and analyze individual wrestling matches live
+  
+  As a <role> 
+  I want <feature> 
+  So that <business value>
+  
+  Scenario: I want to record a takedown
+  Given: The wrestling match is in progress
+  When: I click the takedown button
+  Then: The system should add the takedown to the queue for the wrestler, and the state of the wrestlers will change
+  
+  Scenario: A match is beginning
+  Given: There is no match in the system
+  When: I create a new match and enter the wrestler's information
+  Then: The scorekeeping form opens for me to begin recording the live match
+  
+  Scenario: A match has ended
+  Given: I'm recording a match that comes to an end
+  When: I click end match and enter the victory conditions
+  Then: The results are saved and posted to social networks
+  
+  Scenario: I am recording a match that already occurred
+  Given: I have a boutsheet of a match that is over
+  When: I enter the data from the boutsheet and mark it as not-live
+  Then: The system saves the match and marks it as not-live
+  
